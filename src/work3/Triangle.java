@@ -11,7 +11,7 @@ public class Triangle {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("請輸入三角形三邊長:");
 		int[] num = new int[3]; 
-		for (int i = 0; i < 3 ; i++) {
+		for (int i = 0; i < num.length ; i++) {
 			num[i] = sc.nextInt();
 		}
 		int x = num[0];
@@ -19,10 +19,12 @@ public class Triangle {
 		int z = num[2];
 		if(x <= 0|| y <= 0 || z <= 0) {
 			System.out.println("不是三角形");
-		}else if(x == y && y == z) {
+		}else if(x == y && y == z && x != 0) {
 			System.out.println("正三角形");
 		}else if(x == y || y == z || x == z ) {
 			System.out.println("等腰三角形");	
+		}else if(x == y || y == z || x == z ) {
+			System.out.println("直角三角形");
 		}else{
 			System.out.println("其他三角形");
 		}

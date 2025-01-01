@@ -7,7 +7,7 @@ public class Homework2 {
 		System.out.println("1～10的連乘積: " + multiply1());
 		System.out.println("1～10的連乘積: " + multiply2());
 		System.out.print("輸出結果: " ); multiply3();
-		System.out.println("可選擇數字: "+ removeFour());
+		System.out.println("可選擇數字總數: "+ removeFour());
 		oneTwoTen();
 		aTof();
 	}
